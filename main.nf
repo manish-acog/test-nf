@@ -6,7 +6,7 @@ process HELLO_WORLD {
     echo true
 
     input:
-    val input  // Takes a single value as input
+    val input  
 
     script:
     """
@@ -17,8 +17,8 @@ process HELLO_WORLD {
 
 workflow test_workflow {
     main:
-    val ch_input = params.input  // Directly assign the string to val
-    HELLO_WORLD(ch_input)  // Pass the value to the process
+    ch_input = params.input  
+    HELLO_WORLD(ch_input) 
 }
 
 workflow {
