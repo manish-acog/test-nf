@@ -1,5 +1,3 @@
-params.input = "Hello, Nextflow!"
-
 process HELLO_WORLD {
     label "process_large"
     label "hello_world"
