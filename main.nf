@@ -9,8 +9,7 @@ process HELLO_WORLD {
     script:
     """
     echo "Processing input: ${input}"
-    curl -O https://link.testfile.org/PDF10MB
-    ls
+    curl -I https://www.google.com
     echo "Nothing to see here! Bye!!"
     """
 }
